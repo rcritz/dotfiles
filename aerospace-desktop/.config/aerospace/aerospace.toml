@@ -212,6 +212,9 @@ down = 'volume down'
 up = 'volume up'
 shift-down = ['volume set 0', 'mode main']
 
+[workspace-to-monitor-force-assignment]
+A = 'secondary'
+
 [[on-window-detected]]
 if.app-id = 'com.rdbrck.shift'
 run = 'move-node-to-workspace S'
