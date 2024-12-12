@@ -59,12 +59,12 @@ preset = 'qwerty'
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 0
-inner.vertical =   0
-outer.left =       0
+inner.horizontal = 10
+inner.vertical =   10
+outer.left =       10
 outer.bottom =     0
 outer.top =        0
-outer.right =      0
+outer.right =      10
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -246,3 +246,7 @@ run = 'move-node-to-workspace U'
 [[on-window-detected]]
 if.app-id = 'com.apple.AppStore'
 run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.flexibits.fantastical2.mac'
+run = 'move-node-to-workspace C'
