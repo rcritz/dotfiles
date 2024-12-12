@@ -214,6 +214,7 @@ shift-down = ['volume set 0', 'mode main']
 
 [workspace-to-monitor-force-assignment]
 A = 'secondary'
+10 = 'secondary'
 
 [[on-window-detected]]
 if.app-id = 'com.rdbrck.shift'
