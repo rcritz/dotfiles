@@ -78,6 +78,7 @@ format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 
 [hostname]
 style = 'fg:#a0a9cb bg:#1d2230'
+format = '[$ssh_symbol$hostname]($style)'
 
 [character]
 success_symbol = '[➜](bold green) '
