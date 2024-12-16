@@ -43,6 +43,11 @@ format = '[[ $symbol $branch ](fg:#a6cff0 bg:#394260)]($style)'
 [git_status]
 style = "bg:#394260"
 format = '[[($all_status$ahead_behind )](fg:#a6cff0 bg:#394260)]($style)'
+ahead = '⇡${count}'
+behind = '⇣${count}'
+staged = '+${count}'
+modified = '!${count}'
+stashed = '$${count}'
 
 [nodejs]
 symbol = ""
