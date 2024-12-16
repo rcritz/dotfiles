@@ -16,6 +16,7 @@ $time\
 [ ](fg:#1d2230)\
 \n$character"""
 
+palette = "catppuccin_latte"
 
 [os]
 disabled = false
