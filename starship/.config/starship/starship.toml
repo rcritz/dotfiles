@@ -80,7 +80,7 @@ format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 
 [hostname]
 style = 'fg:#a0a9cb bg:#1d2230'
-format = '[$ssh_symbol$hostname]($style)'
+format = '[$ssh_symbol$hostname  ]($style)'
 
 [cmd_duration]
 format = '[$duration]($style)'
