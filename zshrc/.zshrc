@@ -63,10 +63,10 @@ alias kickstart="sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app
 alias sublime="open -a /Applications/Sublime\ Text.app/"
 alias -g stt='open -b com.sublimetext.4'
 alias ls='eza --color=always --icons=always'
-alias l.='eza --color=always --icons=always -d .*'
-alias ll='eza --color=always --icons=always -l --git'
-alias lla='eza --color=always --icons=always -la --git'
-alias tree='eza --color=always --icons=always --tree'
+alias l.="$aliases[ls] -d .*"
+alias ll="$aliases[ls] -l --git"
+alias lla="$aliases[ls] -la --git"
+alias tree="$aliases[ls] --tree"
 alias mute='osascript -e "set volume output muted true"'
 alias unmute='osascript -e "set volume output muted false"'
 alias empty='osascript -e "tell application \"Finder\" to empty trash"'
