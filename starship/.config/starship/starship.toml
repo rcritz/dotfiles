@@ -7,6 +7,7 @@ $hostname\
 [](bg:sky fg:surface0)\
 $directory\
 [](fg:sky bg:teal)\
+${custom.giturl}\
 $git_branch\
 $git_status\
 [](fg:teal bg:text)\
@@ -105,6 +106,30 @@ format = '[$symbol$number  ]($style)'
 [character]
 success_symbol = '[➜](bold green) '
 error_symbol = '[✗](bold red) '
+
+[custom.giturl]
+description = "Display symbol for remote Git server"
+command = """
+GIT_REMOTE=$(command git ls-remote --get-url 2> /dev/null)
+if [[ "$GIT_REMOTE" =~ "github" ]]; then
+    GIT_REMOTE_SYMBOL=" "
+elif [[ "$GIT_REMOTE" =~ "gitlab" ]]; then
+    GIT_REMOTE_SYMBOL=" "
+elif [[ "$GIT_REMOTE" =~ "bitbucket" ]]; then
+    GIT_REMOTE_SYMBOL=" "
+elif [[ "$GIT_REMOTE" =~ "git" ]]; then
+    GIT_REMOTE_SYMBOL=" "
+else
+    GIT_REMOTE_SYMBOL=" "
+fi
+echo "$GIT_REMOTE_SYMBOL "
+"""
+#when = 'git rev-parse --is-inside-work-tree 2> /dev/null'
+require_repo = true
+when = true
+shell = ["bash", "--noprofile", "--norc"]
+style = "bg:teal fg:crust"
+format = "[ $output ]($style)"
 
 [palettes.catppuccin_latte]
 rosewater = "#dc8a78"
