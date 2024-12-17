@@ -79,7 +79,7 @@ style = "bg:text fg:mantle"
 format = '[ $symbol ($version) ]($style)'
 
 [php]
-symbol = ""
+symbol = ""
 style = "bg:text fg:mantle"
 format = '[ $symbol ($version) ]($style)'
 
