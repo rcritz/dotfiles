@@ -10,6 +10,7 @@ $directory\
 $git_branch\
 $git_status\
 [](fg:teal bg:text)\
+$swift\
 $nodejs\
 $rust\
 $golang\
@@ -18,7 +19,8 @@ $php\
 $jobs\
 $cmd_duration\
 [ ](fg:dark)\
-\n$character"""
+$line_break\
+$character"""
 
 palette = "catppuccin_latte"
 
@@ -54,6 +56,11 @@ behind = '⇣${count}'
 staged = '+${count}'
 modified = '!${count}'
 stashed = '$${count}'
+
+[swift]
+symbol = ""
+style = "bg:text fg:mantle"
+format = "[ $symbol ($version) ]($style)"
 
 [nodejs]
 symbol = ""
