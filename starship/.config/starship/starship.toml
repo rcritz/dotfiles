@@ -33,6 +33,7 @@ style = "bg:surface0 fg:text"
 Macos = " "
 
 [directory]
+home_symbol = ""
 style = "fg:base bg:sky"
 format = "[ $path ]($style)"
 truncation_length = 3
