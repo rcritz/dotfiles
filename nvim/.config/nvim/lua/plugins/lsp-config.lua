@@ -14,6 +14,12 @@ return {
 			},
 		},
 	},
+  {
+    "nvimdev/lspsaga.nvim",
+    config = function()
+      require('lspsaga').setup({})
+    end,
+  },
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
