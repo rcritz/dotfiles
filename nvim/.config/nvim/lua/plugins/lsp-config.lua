@@ -11,7 +11,6 @@ return {
 				"jedi_language_server",
 				"clangd",
 				"bashls",
-        "codelldb",
 			},
 		},
 	},
