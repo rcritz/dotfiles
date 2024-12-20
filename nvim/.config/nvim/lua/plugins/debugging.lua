@@ -27,6 +27,8 @@ return {
 
 			vim.keymap.set("n", "<Leader>dt", dap.toggle_breakpoint, {})
 			vim.keymap.set("n", "<Leader>dc", dap.continue, {})
+      vim.keymap.set("n", "<Leader>dx", dap.terminate, {})
+      vim.keymap.set("n", "<Leader>do", dap.step_over, {})
 		end,
 	},
 }
