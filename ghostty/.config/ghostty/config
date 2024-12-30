@@ -1,0 +1,4 @@
+theme = catppuccin-latte
+font-size = 14
+font-family = "MesloLGS NF"
+quit-after-last-window-closed = true
