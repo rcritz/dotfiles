@@ -8,6 +8,7 @@ config = {
   window_close_confirmation = "NeverPrompt",
   color_scheme = "Catppuccin Latte",
   font_size = 14.0,
+  font = wezterm.font 'MesloLGS NF',
 }
 
 return config
