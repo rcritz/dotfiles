@@ -78,6 +78,7 @@ alias lg='lazygit'
 alias yy='yazi'
 alias cat='bat'
 alias cd='z'
+alias ff='fastfetch'
 
 # use antigen to add to configuration
 source $(brew --prefix)/share/antigen/antigen.zsh
