@@ -9,6 +9,7 @@ config = {
   color_scheme = "Catppuccin Latte",
   font_size = 14.0,
   font = wezterm.font 'MesloLGS NF',
+  window_decorations = "RESIZE",
 }
 
 return config
