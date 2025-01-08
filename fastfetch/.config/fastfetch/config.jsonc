@@ -25,7 +25,10 @@
     "swap",
     "disk",
     "localip",
-    "publicip",
+    {
+      "type": "publicip",
+      "timeout": 1000,
+    },
     "wifi",
     "battery",
     "poweradapter",
