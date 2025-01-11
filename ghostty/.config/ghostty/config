@@ -1,6 +1,7 @@
 theme = catppuccin-latte
 font-size = 14
-font-family = "MesloLGS NF"
+#font-family = "MesloLGS NF"
+font-family = "RobotoMono Nerd Font Mono"
 quit-after-last-window-closed = true
 macos-titlebar-style = "hidden"
 #gtk-titlebar = false
