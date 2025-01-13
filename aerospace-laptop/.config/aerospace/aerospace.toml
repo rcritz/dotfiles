@@ -265,5 +265,9 @@ if.app-id = 'us.zoom.xos'
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-id = 'com.bombich.ccc'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'com.adobe.Acrobat.Pro'
 run = 'layout floating'
