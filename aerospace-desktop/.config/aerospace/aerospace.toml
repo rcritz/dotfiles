@@ -275,3 +275,7 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.adobe.Acrobat.Pro'
 run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.valvesoftware.steam'
+run = 'move-node-to-workspace Z'
