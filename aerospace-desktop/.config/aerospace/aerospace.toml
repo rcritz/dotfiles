@@ -279,3 +279,7 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.valvesoftware.steam'
 run = ['layout floating', 'move-node-to-workspace Z']
+
+[[on-window-detected]]
+if.app-id = 'com.cockos.reaper'
+run = 'move-node-to-workspace 10'
