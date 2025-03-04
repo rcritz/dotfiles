@@ -24,3 +24,6 @@ vim.opt.scrolloff = 8
 
 vim.opt.spelllang='en_us'
 vim.opt.spell = true
+
+-- Don't show the mode as it's already in the status line
+vim.opt.showmode = false
