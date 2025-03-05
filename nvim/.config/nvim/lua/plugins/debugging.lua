@@ -25,10 +25,10 @@ return {
 				dapui.close()
 			end
 
-			vim.keymap.set("n", "<Leader>dt", dap.toggle_breakpoint, {})
-			vim.keymap.set("n", "<Leader>dc", dap.continue, {})
-      vim.keymap.set("n", "<Leader>dx", dap.terminate, {})
-      vim.keymap.set("n", "<Leader>do", dap.step_over, {})
+			vim.keymap.set("n", "<Leader>dt", dap.toggle_breakpoint, { desc = "toggle breakpoint" })
+			vim.keymap.set("n", "<Leader>dc", dap.continue, { desc = "debug continue" })
+      vim.keymap.set("n", "<Leader>dx", dap.terminate, { desc = "debug terminate" })
+      vim.keymap.set("n", "<Leader>do", dap.step_over, { desc = "step over" })
 		end,
 	},
 }
