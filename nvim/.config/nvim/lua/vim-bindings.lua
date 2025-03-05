@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 vim.keymap.set("n", "<C-n>", "<cmd>bn<cr>")
 vim.keymap.set("n", "<C-p>", "<cmd>bp<cr>")
