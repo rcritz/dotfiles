@@ -318,3 +318,7 @@ run = ['layout floating', 'move-node-to-workspace Z']
 [[on-window-detected]]
 if.app-id = 'com.cockos.reaper'
 run = 'move-node-to-workspace 10'
+
+[[on-window-detected]]
+if.app-id = 'app.zen-browser.zen'
+run = 'move-node-to-workspace B'
