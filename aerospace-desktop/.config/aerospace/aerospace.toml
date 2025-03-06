@@ -321,4 +321,4 @@ run = 'move-node-to-workspace 10'
 
 [[on-window-detected]]
 if.app-id = 'app.zen-browser.zen'
-run = 'move-node-to-workspace B'
+run = 'move-node-to-workspace S'

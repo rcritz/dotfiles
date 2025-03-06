@@ -313,4 +313,4 @@ run = ['layout floating', 'move-node-to-workspace Z']
 
 [[on-window-detected]]
 if.app-id = 'app.zen-browser.zen'
-run = 'move-node-to-workspace Z'
+run = 'move-node-to-workspace B'
