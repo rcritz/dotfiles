@@ -96,5 +96,12 @@ return {
             end,
             desc = "[/] Live grep the current buffer",
         },
+        {
+            "<leader>z",
+            function()
+                require("fzf-lua").zoxide()
+            end,
+            desc = "[Z]oxide",
+        },
     }
 }
