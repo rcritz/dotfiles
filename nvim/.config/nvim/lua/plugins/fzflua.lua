@@ -4,7 +4,12 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     -- or if using mini.icons/mini.nvim
     -- dependencies = { "echasnovski/mini.icons" },
-    opts = {},
+    -- the following came from under "picker options" at https://github.com/ibhagwan/fzf-lua?tab=readme-ov-file
+    opts = {
+        grep = {
+            hidden = true,
+        },
+    },
     keys={
         {
             "<leader>ff",
