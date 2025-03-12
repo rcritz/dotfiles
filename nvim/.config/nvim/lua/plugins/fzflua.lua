@@ -6,20 +6,20 @@ return {
     -- dependencies = { "echasnovski/mini.icons" },
     opts = {},
     keys={
-        { 
+        {
             "<leader>ff",
             function() require('fzf-lua').files() end,
-            desc="Find Files in project directory"
+            desc="[F]ind [F]iles"
         },
-        { 
+        {
             "<leader>fg",
             function() require('fzf-lua').live_grep() end,
-            desc="Find by grepping in project directory"
+            desc="[F]ind by [G]repping"
         },
-        { 
-            "<leader>fc",
+        {
+            "<leader>fn",
             function() require('fzf-lua').files({cwd=vim.fn.stdpath("config")}) end,
-            desc="Find in neovim configuration"
+            desc="[F]ind in [N]eovim configuration"
         },
         {
             "<leader>fh",
