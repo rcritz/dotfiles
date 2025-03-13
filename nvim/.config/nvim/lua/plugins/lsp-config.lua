@@ -16,6 +16,7 @@ return {
   },
   {
     "nvimdev/lspsaga.nvim",
+    config = true,
   },
   {
     "neovim/nvim-lspconfig",
