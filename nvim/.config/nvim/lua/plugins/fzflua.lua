@@ -10,6 +10,9 @@ return {
             hidden = true,
         },
     },
+    init = function()
+        require("fzf-lua").register_ui_select()
+    end,
     keys={
         {
             "<leader>ff",
