@@ -29,6 +29,7 @@ return {
       vim.keymap.set("n", "<Leader>dc", dap.continue, { desc = "debug continue" })
       vim.keymap.set("n", "<Leader>dx", dap.terminate, { desc = "debug terminate" })
       vim.keymap.set("n", "<Leader>do", dap.step_over, { desc = "step over" })
+      vim.keymap.set("n", "<Leader>db", dapui.toggle, { desc = "toggle [D]e[B]ugger UI" })
     end,
   },
 }
