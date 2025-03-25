@@ -6,6 +6,7 @@ return {
       "shfmt",
       "clangd",
       "codelldb",
+      -- "harper-ls",
       "json-lsp",
       "lua-language-server",
       "markdown-toc",

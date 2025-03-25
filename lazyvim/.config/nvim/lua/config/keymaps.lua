@@ -2,9 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 -- stylua: ignore start
-vim.keymap.set("n", "<C-n>", "<cmd>bn<cr>", { desc = "buffer next" })
-vim.keymap.set("n", "<C-p>", "<cmd>bp<cr>", { desc = "buffer prev" })
-
 vim.keymap.set("n", "J", "mzJ`z", { desc = "improved Join" })
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "improved scroll down" } )
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "imrpoved scroll up" })
@@ -19,5 +16,6 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "delete to blackhole
 vim.keymap.set("x", "J", ":m '>+1<CR>gv=gv", { desc = "move selected block down" })
 vim.keymap.set("x", "K", ":m '<-2<CR>gv=gv", { desc = "move selected block up" })
 
+vim.keymap.set("n", "<Esc>", "<cmd>noh<cr>", { desc = "turn off search highlighting" })
 vim.keymap.set("n", "gl", function() vim.diagnostic.open_float() end, { desc = "[G]oto [L]anguage Diagnostics" })
 -- stylua: ignore end
