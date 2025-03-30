@@ -16,6 +16,7 @@ return {
     },
     indent = { enabled = false },
     scroll = { enabled = false },
+    statuscolumn = { enabled = true },
     words = { enabled = true },
     dashboard = {
       sections = {
