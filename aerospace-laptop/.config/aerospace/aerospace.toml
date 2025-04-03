@@ -319,3 +319,7 @@ run = 'move-node-to-workspace B'
 [[on-window-detected]]
 if.app-id = 'com.cockos.reaper'
 run = 'move-node-to-workspace 10'
+
+[[on-window-detected]]
+if.app-id = 'com.cockos.reaper'
+run = 'move-node-to-workspace D'
