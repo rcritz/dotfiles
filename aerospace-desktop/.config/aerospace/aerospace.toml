@@ -325,5 +325,5 @@ if.app-id = 'app.zen-browser.zen'
 run = 'move-node-to-workspace S'
 
 [[on-window-detected]]
-if.app-id = 'com.cockos.reaper'
+if.app-id = 'com.steinberg.dorico5'
 run = 'move-node-to-workspace D'
