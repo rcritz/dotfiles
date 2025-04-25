@@ -6,6 +6,7 @@ return {
       "shfmt",
       "clangd",
       "codelldb",
+      "emmet-language-server",
       -- "harper-ls",
       "json-lsp",
       "lua-language-server",
