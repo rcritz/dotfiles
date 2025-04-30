@@ -323,3 +323,7 @@ run = 'move-node-to-workspace 10'
 [[on-window-detected]]
 if.app-id = 'com.steinberg.dorico5'
 run = 'move-node-to-workspace D'
+
+[[on-window-detected]]
+if.app-id = 'com.steinberg.dorico6'
+run = 'move-node-to-workspace D'
