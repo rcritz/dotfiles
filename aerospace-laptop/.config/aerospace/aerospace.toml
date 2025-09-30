@@ -339,3 +339,7 @@ run = 'move-node-to-workspace D'
 [[on-window-detected]]
 if.app-id = 'com.bambulab.bambu-studio'
 run = 'move-node-to-workspace 3'
+
+[[on-window-detected]]
+if.app-id = 'com.adobe.LightroomClassicCC7'
+run = 'move-node-to-workspace 8'
