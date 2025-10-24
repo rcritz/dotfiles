@@ -14,7 +14,7 @@ return {
       hgcommit = false,
       svn = false,
       cvs = false,
-      ["."] = true,
+      ["*"] = true,
     },
   },
 }
