@@ -367,3 +367,7 @@ run = 'move-node-to-workspace 4'
 [[on-window-detected]]
 if.app-id = 'com.bookry.wavebox'
 run = 'move-node-to-workspace S'
+
+[[on-window-detected]]
+if.app-id = 'com.anthropic.claudefordesktop'
+run = 'move-node-to-workspace 5'
