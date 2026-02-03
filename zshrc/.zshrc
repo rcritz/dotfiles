@@ -164,3 +164,6 @@ eval "$(zoxide init zsh)"
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
+
+# OpenClaw Completion
+source <(openclaw completion --shell zsh)
