@@ -80,6 +80,7 @@ alias yy='yazi'
 alias cat='bat'
 alias cd='z'
 alias ff='fastfetch'
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 # use antigen to add to configuration
 source $(brew --prefix)/share/antigen/antigen.zsh
