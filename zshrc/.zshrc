@@ -40,6 +40,7 @@ HISTDUP=erase
 CORRECT_IGNORE_FILE='.git'
 
 # set environment variables including PATH
+export CLEANPATH="$PATH"
 export GPG_TTY=$(tty)
 export GOPATH=$HOME/goprojects
 export JAVA_HOME=/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
@@ -49,6 +50,8 @@ export OLDPATH=$PATH
 export HOMEBREW_NO_INSTALL_CLEANUP=1
 export HOMEBREW_NO_AUTO_UPDATE=1
 export EDITOR='nvim'
+
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 # make sure non-GUI connections get a GPG prompt they can actually see
 if test "$SSH_CONNECTION" != ""
