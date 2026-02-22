@@ -51,8 +51,6 @@ export HOMEBREW_NO_INSTALL_CLEANUP=1
 export HOMEBREW_NO_AUTO_UPDATE=1
 export EDITOR='nvim'
 
-[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
-
 # make sure non-GUI connections get a GPG prompt they can actually see
 if test "$SSH_CONNECTION" != ""
 then
@@ -84,6 +82,8 @@ alias cat='bat'
 alias cd='z'
 alias ff='fastfetch'
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 # use antigen to add to configuration
 source $(brew --prefix)/share/antigen/antigen.zsh
