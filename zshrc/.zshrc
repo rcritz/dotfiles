@@ -103,9 +103,16 @@ autoload xcswitch
 autoload manp
 autoload mant
 autoload -U select-word-style && select-word-style bash
-# the -i is to prevent issues on Kristina's machine where she owns homebrew instead of me.
-# do not use -i on a system where I don't completely control security
-autoload compinit && compinit -i
+# on a machine like "krisitna", I don't own homebrew so compinit will complain
+# because compaudit complains. Ignore those complaints with "-i"
+case "$(hostname -s)" in
+  kristina)
+    autoload compinit && compinit -i
+    ;;
+  *)
+    autoload compinit && compinit
+    ;;
+esac
 compdef _swift-completions swift # use the definition from `swift package completion-tool` instead of default
 
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
