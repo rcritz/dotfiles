@@ -19,6 +19,7 @@ setopt APPEND_HISTORY
 setopt HIST_IGNORE_SPACE
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_IGNORE_ALL_DUPS
+setopt INC_APPEND_HISTORY  # write history incrementally (not just on shell exit)
 setopt CORRECT
 setopt CORRECT_ALL
 setopt PROMPT_SUBST
@@ -32,6 +33,7 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
 
 # expand history
+export HISTFILE=~/.zsh_history
 HISTSIZE=50000
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
