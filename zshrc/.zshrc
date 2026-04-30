@@ -105,6 +105,9 @@ autoload xcswitch
 autoload manp
 autoload mant
 autoload -U select-word-style && select-word-style bash
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^X^E' edit-command-line
 # on a machine like "krisitna", I don't own homebrew so compinit will complain
 # because compaudit complains. Ignore those complaints with "-i"
 case "$(hostname -s)" in
