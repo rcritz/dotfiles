@@ -184,4 +184,4 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
 # OpenClaw Completion
-command -v openclaw >/dev/null 2>&1 && source <(openclaw completion --shell zsh)
+[ -f "/home/clawdbot/.openclaw/completions/openclaw.zsh" ] && source "/home/clawdbot/.openclaw/completions/openclaw.zsh"
