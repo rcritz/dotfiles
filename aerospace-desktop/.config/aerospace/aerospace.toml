@@ -357,6 +357,10 @@ if.app-id = 'com.adobe.LightroomClassicCC7'
 run = 'move-node-to-workspace 8'
 
 [[on-window-detected]]
+if.app-id = 'com.openai.codex'
+run = 'move-node-to-workspace 5'
+
+[[on-window-detected]]
 if.app-id = 'com.openai.chat'
 run = 'move-node-to-workspace 5'
 
