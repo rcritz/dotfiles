@@ -347,6 +347,10 @@ if.app-id = 'com.steinberg.dorico6'
 run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
+if.app-id = 'com.dreamtonics.svstudio2.pro'
+run = 'move-node-to-workspace D'
+
+[[on-window-detected]]
 if.app-id = 'com.apple.ActivityMonitor'
 run = 'move-node-to-workspace A'
 
