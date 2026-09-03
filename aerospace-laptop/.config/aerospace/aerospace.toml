@@ -319,10 +319,6 @@ if.app-id = 'com.adobe.Acrobat.Pro'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'com.valvesoftware.steam'
-run = ['layout floating', 'move-node-to-workspace Z']
-
-[[on-window-detected]]
 if.app-id = 'app.zen-browser.zen'
 run = 'move-node-to-workspace B'
 
@@ -373,3 +369,11 @@ run = 'move-node-to-workspace R'
 [[on-window-detected]]
 if.app-id = 'com.microsoft.teams2'
 run = 'move-node-to-workspace Z'
+
+[[on-window-detected]]
+if.app-id = 'com.valvesoftware.steam.helper'
+run = ['layout floating', 'move-node-to-workspace X']
+
+[[on-window-detected]]
+if.app-id = 'com.valvesoftware.steam'
+run = ['layout floating', 'move-node-to-workspace X']
