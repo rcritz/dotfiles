@@ -84,7 +84,7 @@ alias cat='bat'
 alias cd='z'
 alias ff='fastfetch'
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
-alias age-open='age -d -i <(op read "op://Private/OpenClaw Backup age Recovery Identity/notesPlain")'
+alias age-cat='age -d -i <(op read "op://Private/OpenClaw Backup age Recovery Identity/notesPlain")'
 
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
