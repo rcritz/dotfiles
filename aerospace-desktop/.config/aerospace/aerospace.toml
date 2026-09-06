@@ -264,6 +264,7 @@ alt-shift-l = 'move right'
 
 [workspace-to-monitor-force-assignment]
 A = 'secondary'
+B = 'secondary'
 10 = 'secondary'
 
 [[on-window-detected]]
