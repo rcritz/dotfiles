@@ -45,6 +45,15 @@ previous_tab = ["prefix+p", "shift+left", "alt+shift+h"]
 next_tab = ["prefix+n", "shift+right", "alt+shift+l"]
 new_tab = "prefix+c"
 
+# Workspace navigation and direct agent access. Keep these behind the Herdr
+# prefix so they do not collide with AeroSpace's global shortcuts.
+workspace_picker = "prefix+w"
+goto = "prefix+g"
+previous_workspace = ["prefix+up", "shift+up"]
+next_workspace = ["prefix+down", "shift+down"]
+switch_workspace = "prefix+ctrl+1..9"
+focus_agent = "prefix+ctrl+shift+1..9"
+
 # Familiar session actions.
 copy_mode = "prefix+["
 close_pane = "prefix+x"
@@ -61,7 +70,7 @@ hide_tab_bar_when_single_tab = true
 mouse_capture = true
 pane_scrollbars = false
 pane_gaps = false
-pane_outer_borders = false
+pane_outer_borders = true
 prompt_new_tab_name = false
 status_indicators = "symbols"
 
