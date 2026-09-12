@@ -1,0 +1,84 @@
+# Minimal Herdr configuration matching Richard's tmux muscle memory.
+# Target: ~/.config/herdr/config.toml
+
+onboarding = false
+
+[terminal]
+new_cwd = "follow"
+
+[keys]
+# Same prefix as tmux: press Ctrl-Space, release, then the command key.
+prefix = "ctrl+space"
+
+# tmux: prefix+r reloads configuration.
+reload_config = "prefix+r"
+
+# Vim-style pane movement plus direct Alt-arrow movement,
+# matching tmux bind -n M-Arrow.
+focus_pane_left = ["prefix+h", "alt+left"]
+focus_pane_down = ["prefix+j", "alt+down"]
+focus_pane_up = ["prefix+k", "alt+up"]
+focus_pane_right = ["prefix+l", "alt+right"]
+
+# Uppercase H/J/K/L resize panes, matching tmux's 5-cell resize bindings.
+# Herdr chooses its own resize increment.
+resize_pane_left = "prefix+shift+h"
+resize_pane_down = "prefix+shift+j"
+resize_pane_up = "prefix+shift+k"
+resize_pane_right = "prefix+shift+l"
+
+# Move Herdr's default pane-swap bindings out of the way.
+swap_pane_left = "prefix+ctrl+shift+h"
+swap_pane_down = "prefix+ctrl+shift+j"
+swap_pane_up = "prefix+ctrl+shift+k"
+swap_pane_right = "prefix+ctrl+shift+l"
+
+# tmux prefix+f toggles zoom.
+zoom = "prefix+f"
+
+# tmux-style splits: | or % side-by-side; - or " stacked.
+split_vertical = ["prefix+|", "prefix+%"]
+split_horizontal = ["prefix+minus", "prefix+\""]
+
+# Treat Herdr tabs as tmux windows for existing direct shortcuts.
+previous_tab = ["prefix+p", "shift+left", "alt+shift+h"]
+next_tab = ["prefix+n", "shift+right", "alt+shift+l"]
+new_tab = "prefix+c"
+
+# Familiar session actions.
+copy_mode = "prefix+["
+close_pane = "prefix+x"
+detach = "prefix+q"
+help = "prefix+?"
+toggle_sidebar = "prefix+b"
+
+[ui]
+# Start without the sidebar/tab clutter and disable mouse capture.
+sidebar_start_collapsed = true
+sidebar_collapsed_mode = "hidden"
+hide_tab_bar_when_single_tab = true
+mouse_capture = false
+pane_scrollbars = false
+pane_gaps = false
+pane_outer_borders = false
+prompt_new_tab_name = false
+status_indicators = "symbols"
+
+[ui.sound]
+enabled = false
+
+[[keys.command]]
+key = "prefix+ctrl+g"
+type = "popup"
+command = "lazygit"
+description = "open lazygit"
+width = "90%"
+height = "90%"
+
+[[keys.command]]
+key = "prefix+ctrl+o"
+type = "popup"
+command = "opencode"
+description = "open OpenCode"
+width = "90%"
+height = "90%"
