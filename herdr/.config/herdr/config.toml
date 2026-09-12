@@ -54,10 +54,11 @@ toggle_sidebar = "prefix+b"
 
 [ui]
 # Start without the sidebar/tab clutter and disable mouse capture.
-sidebar_start_collapsed = true
+# temporarily turn off collapsed for sidebar and reenable mouse capture
+sidebar_start_collapsed = false
 sidebar_collapsed_mode = "hidden"
 hide_tab_bar_when_single_tab = true
-mouse_capture = false
+mouse_capture = true
 pane_scrollbars = false
 pane_gaps = false
 pane_outer_borders = false
@@ -65,7 +66,7 @@ prompt_new_tab_name = false
 status_indicators = "symbols"
 
 [ui.sound]
-enabled = false
+enabled = true
 
 [[keys.command]]
 key = "prefix+ctrl+g"
@@ -82,3 +83,10 @@ command = "opencode"
 description = "open OpenCode"
 width = "90%"
 height = "90%"
+
+[theme]
+name = "terminal"
+auto_switch = false
+
+[ui.toast]
+delivery = "herdr"
