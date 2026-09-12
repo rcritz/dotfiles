@@ -57,7 +57,7 @@ focus_agent = "prefix+ctrl+shift+1..9"
 # Familiar session actions.
 copy_mode = "prefix+["
 close_pane = "prefix+x"
-detach = "prefix+q"
+detach = ["prefix+q", "prefix+d"]
 help = "prefix+?"
 toggle_sidebar = "prefix+b"
 
