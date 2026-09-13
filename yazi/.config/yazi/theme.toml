@@ -1,3 +1,4 @@
 [flavor]
 dark = "catppuccin-mocha"
-light = "catppuccin-latte"
+# this used to be latte but that's not working correctly in my config
+light = "catppuccin-mocha"
