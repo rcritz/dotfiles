@@ -93,6 +93,14 @@ description = "open OpenCode"
 width = "90%"
 height = "90%"
 
+[[keys.command]]
+key = "prefix+u"
+type = "popup"
+command = "~/.config/herdr/url-pick.sh"
+description = "open URL from pane"
+width = "90%"
+height = "60%"
+
 [theme]
 name = "terminal"
 auto_switch = false
