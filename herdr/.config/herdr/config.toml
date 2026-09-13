@@ -80,7 +80,7 @@ enabled = true
 [[keys.command]]
 key = "prefix+ctrl+g"
 type = "popup"
-command = "lazygit"
+command = "~/.config/herdr/launch-lazygit.sh"
 description = "open lazygit"
 width = "90%"
 height = "90%"
