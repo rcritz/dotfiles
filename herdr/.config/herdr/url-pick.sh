@@ -18,13 +18,36 @@ if [[ -z "$herdr_bin" || ! -x "$herdr_bin" ]]; then
   exit 1
 fi
 
-for dependency in fzf python3; do
-  if ! command -v "$dependency" >/dev/null 2>&1; then
-    printf 'herdr URL picker: %s is required\n' "$dependency" >&2
-    pause_on_error
-    exit 1
-  fi
-done
+fzf_bin="${HERDR_FZF_PATH:-}"
+if [[ -z "$fzf_bin" ]]; then
+  fzf_bin="$(command -v fzf 2>/dev/null || true)"
+fi
+if [[ -z "$fzf_bin" ]]; then
+  for candidate in \
+    "$HOME/.local/bin/fzf" \
+    "$HOME/.fzf/bin/fzf" \
+    /home/linuxbrew/.linuxbrew/bin/fzf \
+    /opt/homebrew/bin/fzf \
+    /usr/local/bin/fzf \
+    /usr/bin/fzf; do
+    if [[ -x "$candidate" ]]; then
+      fzf_bin="$candidate"
+      break
+    fi
+  done
+fi
+
+if [[ -z "$fzf_bin" || ! -x "$fzf_bin" ]]; then
+  printf 'herdr URL picker: fzf is required\n' >&2
+  pause_on_error
+  exit 1
+fi
+
+if ! command -v python3 >/dev/null 2>&1; then
+  printf 'herdr URL picker: python3 is required\n' >&2
+  pause_on_error
+  exit 1
+fi
 
 pane_id="${HERDR_ACTIVE_PANE_ID:-}"
 if [[ -z "$pane_id" ]]; then
@@ -63,7 +86,7 @@ if [[ -z "$urls" ]]; then
   exit 0
 fi
 
-selected="$(printf '%s\n' "$urls" | fzf --multi --exit-0 --no-preview --prompt='Open URL> ')"
+selected="$(printf '%s\n' "$urls" | "$fzf_bin" --multi --exit-0 --no-preview --prompt='Open URL> ')"
 [[ -z "$selected" ]] && exit 0
 
 open_url() {
