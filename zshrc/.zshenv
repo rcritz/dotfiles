@@ -9,3 +9,5 @@ elif [[ -d /home/linuxbrew/.linuxbrew/bin ]]; then
 fi
 
 export PATH
+
+[[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
