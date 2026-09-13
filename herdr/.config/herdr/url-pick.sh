@@ -7,7 +7,18 @@ pause_on_error() {
   read -r _
 }
 
-for dependency in herdr fzf python3; do
+herdr_bin="${HERDR_BIN_PATH:-}"
+if [[ -z "$herdr_bin" ]]; then
+  herdr_bin="$(command -v herdr 2>/dev/null || true)"
+fi
+
+if [[ -z "$herdr_bin" || ! -x "$herdr_bin" ]]; then
+  printf 'herdr URL picker: cannot locate the Herdr binary\n' >&2
+  pause_on_error
+  exit 1
+fi
+
+for dependency in fzf python3; do
   if ! command -v "$dependency" >/dev/null 2>&1; then
     printf 'herdr URL picker: %s is required\n' "$dependency" >&2
     pause_on_error
@@ -17,7 +28,7 @@ done
 
 pane_id="${HERDR_ACTIVE_PANE_ID:-}"
 if [[ -z "$pane_id" ]]; then
-  pane_id="$(herdr pane current --current 2>/dev/null | python3 -c '
+  pane_id="$("$herdr_bin" pane current --current 2>/dev/null | python3 -c '
 import json, sys
 data = json.load(sys.stdin)
 pane = data.get("result", {}).get("pane", data.get("result", {}))
@@ -31,7 +42,7 @@ if [[ -z "$pane_id" ]]; then
   exit 1
 fi
 
-urls="$({ herdr pane read "$pane_id" --source visible --format text || true; } | python3 -c '
+urls="$({ "$herdr_bin" pane read "$pane_id" --source visible --format text || true; } | python3 -c '
 import re, sys
 
 text = sys.stdin.read()
