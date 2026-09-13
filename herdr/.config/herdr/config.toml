@@ -106,4 +106,4 @@ name = "terminal"
 auto_switch = false
 
 [ui.toast]
-delivery = "terminal"
+delivery = "system"
