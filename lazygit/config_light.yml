@@ -22,3 +22,6 @@ gui:
   
   authorColors:
     '*': '#7287fd'
+
+  worktree:
+    defaultPath: "../worktrees"
