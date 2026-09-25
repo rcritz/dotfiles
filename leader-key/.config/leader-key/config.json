@@ -36,6 +36,16 @@
           "key" : "n",
           "type" : "application",
           "value" : "/Applications/Notion.app"
+        },
+        {
+          "key" : "4",
+          "type" : "application",
+          "value" : "/Applications/forScore.app"
+        },
+        {
+          "key" : "c",
+          "type" : "application",
+          "value" : "/Applications/Claude.app"
         }
       ],
       "key" : "o",
@@ -370,6 +380,11 @@
       "key" : "m",
       "label" : "Move to Aerospace Workspace",
       "type" : "group"
+    },
+    {
+      "key" : "k",
+      "type" : "application",
+      "value" : "/Applications/Telegram.app"
     }
   ],
   "type" : "group"
