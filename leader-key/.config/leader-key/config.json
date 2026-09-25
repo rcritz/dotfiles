@@ -385,6 +385,11 @@
       "key" : "k",
       "type" : "application",
       "value" : "/Applications/Telegram.app"
+    },
+    {
+      "key" : "f",
+      "type" : "command",
+      "value" : "aerospace fullscreen"
     }
   ],
   "type" : "group"
