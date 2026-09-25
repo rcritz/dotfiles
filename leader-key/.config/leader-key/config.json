@@ -30,9 +30,109 @@
           "value": "aerospace workspace 1"
         },
         {
+          "key": "2",
+          "type": "command",
+          "value": "aerospace workspace 2"
+        },
+        {
+          "key": "3",
+          "type": "command",
+          "value": "aerospace workspace 3"
+        },
+        {
+          "key": "4",
+          "type": "command",
+          "value": "aerospace workspace 4"
+        },
+        {
+          "key": "5",
+          "type": "command",
+          "value": "aerospace workspace 5"
+        },
+        {
+          "key": "6",
+          "type": "command",
+          "value": "aerospace workspace 6"
+        },
+        {
+          "key": "7",
+          "type": "command",
+          "value": "aerospace workspace 7"
+        },
+        {
+          "key": "8",
+          "type": "command",
+          "value": "aerospace workspace 8"
+        },
+        {
+          "key": "9",
+          "type": "command",
+          "value": "aerospace workspace 9"
+        },
+        {
+          "key": "0",
+          "type": "command",
+          "value": "aerospace workspace 10"
+        },
+        {
           "key": "a",
           "type": "command",
           "value": "aerospace workspace A"
+        },
+        {
+          "key": "b",
+          "type": "command",
+          "value": "aerospace workspace B"
+        },
+        {
+          "key": "c",
+          "type": "command",
+          "value": "aerospace workspace C"
+        },
+        {
+          "key": "d",
+          "type": "command",
+          "value": "aerospace workspace D"
+        },
+        {
+          "key": "e",
+          "type": "command",
+          "value": "aerospace workspace E"
+        },
+        {
+          "key": "g",
+          "type": "command",
+          "value": "aerospace workspace G"
+        },
+        {
+          "key": "i",
+          "type": "command",
+          "value": "aerospace workspace I"
+        },
+        {
+          "key": "m",
+          "type": "command",
+          "value": "aerospace workspace M"
+        },
+        {
+          "key": "n",
+          "type": "command",
+          "value": "aerospace workspace N"
+        },
+        {
+          "key": "o",
+          "type": "command",
+          "value": "aerospace workspace O"
+        },
+        {
+          "key": "p",
+          "type": "command",
+          "value": "aerospace workspace P"
+        },
+        {
+          "key": "q",
+          "type": "command",
+          "value": "aerospace workspace Q"
         },
         {
           "key": "r",
@@ -48,10 +148,207 @@
           "key": "t",
           "type": "command",
           "value": "aerospace workspace T"
+        },
+        {
+          "key": "u",
+          "type": "command",
+          "value": "aerospace workspace U"
+        },
+        {
+          "key": "v",
+          "type": "command",
+          "value": "aerospace workspace V"
+        },
+        {
+          "key": "w",
+          "type": "command",
+          "value": "aerospace workspace W"
+        },
+        {
+          "key": "x",
+          "type": "command",
+          "value": "aerospace workspace X"
+        },
+        {
+          "key": "y",
+          "type": "command",
+          "value": "aerospace workspace Y"
+        },
+        {
+          "key": "z",
+          "type": "command",
+          "value": "aerospace workspace Z"
+        },
+        {
+          "key": "f",
+          "type": "command",
+          "value": "aerospace fullscreen"
         }
       ],
       "key": "w",
       "label": "Aerospace Workspace",
+      "type": "group"
+    },
+    {
+      "actions": [
+        {
+          "key": "1",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace 1 --focus-follows-window"
+        },
+        {
+          "key": "2",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace 2 --focus-follows-window"
+        },
+        {
+          "key": "3",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace 3 --focus-follows-window"
+        },
+        {
+          "key": "4",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace 4 --focus-follows-window"
+        },
+        {
+          "key": "5",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace 5 --focus-follows-window"
+        },
+        {
+          "key": "6",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace 6 --focus-follows-window"
+        },
+        {
+          "key": "7",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace 7 --focus-follows-window"
+        },
+        {
+          "key": "8",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace 8 --focus-follows-window"
+        },
+        {
+          "key": "9",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace 9 --focus-follows-window"
+        },
+        {
+          "key": "0",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace 10 --focus-follows-window"
+        },
+        {
+          "key": "a",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace A --focus-follows-window"
+        },
+        {
+          "key": "b",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace B --focus-follows-window"
+        },
+        {
+          "key": "c",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace C --focus-follows-window"
+        },
+        {
+          "key": "d",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace D --focus-follows-window"
+        },
+        {
+          "key": "e",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace E --focus-follows-window"
+        },
+        {
+          "key": "g",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace G --focus-follows-window"
+        },
+        {
+          "key": "i",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace I --focus-follows-window"
+        },
+        {
+          "key": "m",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace M --focus-follows-window"
+        },
+        {
+          "key": "n",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace N --focus-follows-window"
+        },
+        {
+          "key": "o",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace O --focus-follows-window"
+        },
+        {
+          "key": "p",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace P --focus-follows-window"
+        },
+        {
+          "key": "q",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace Q --focus-follows-window"
+        },
+        {
+          "key": "r",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace R --focus-follows-window"
+        },
+        {
+          "key": "s",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace S --focus-follows-window"
+        },
+        {
+          "key": "t",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace T --focus-follows-window"
+        },
+        {
+          "key": "u",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace U --focus-follows-window"
+        },
+        {
+          "key": "v",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace V --focus-follows-window"
+        },
+        {
+          "key": "w",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace W --focus-follows-window"
+        },
+        {
+          "key": "x",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace X --focus-follows-window"
+        },
+        {
+          "key": "y",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace Y --focus-follows-window"
+        },
+        {
+          "key": "z",
+          "type": "command",
+          "value": "aerospace move-node-to-workspace Z --focus-follows-window"
+        }
+      ],
+      "key": "m",
+      "label": "Move to Aerospace Workspace",
       "type": "group"
     }
   ],
