@@ -1,0 +1,59 @@
+{
+  "actions": [
+    {
+      "key": "t",
+      "type": "application",
+      "value": "/Applications/Ghostty.app"
+    },
+    {
+      "actions": [
+        {
+          "key": "m",
+          "type": "application",
+          "value": "/System/Applications/Messages.app"
+        },
+        {
+          "key": "f",
+          "type": "application",
+          "value": "/System/Applications/FindMy.app"
+        }
+      ],
+      "key": "o",
+      "label": "Open app",
+      "type": "group"
+    },
+    {
+      "actions": [
+        {
+          "key": "1",
+          "type": "command",
+          "value": "aerospace workspace 1"
+        },
+        {
+          "key": "a",
+          "type": "command",
+          "value": "aerospace workspace A"
+        },
+        {
+          "key": "r",
+          "type": "command",
+          "value": "aerospace workspace R"
+        },
+        {
+          "key": "s",
+          "type": "command",
+          "value": "aerospace workspace S"
+        },
+        {
+          "key": "t",
+          "type": "command",
+          "value": "aerospace workspace T"
+        }
+      ],
+      "key": "w",
+      "label": "Aerospace Workspace",
+      "type": "group"
+    }
+  ],
+  "type": "group"
+}
