@@ -2,6 +2,10 @@ return {
   "saghen/blink.cmp",
   dependencies = {
     "moyiz/blink-emoji.nvim",
+    {
+      "abecodes/tabout.nvim",
+      opts = { completion = false },
+    },
   },
   opts = {
     signature = { enabled = true },
