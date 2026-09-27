@@ -46,6 +46,11 @@
           "key" : "c",
           "type" : "application",
           "value" : "/Applications/Claude.app"
+        },
+        {
+          "key" : "o",
+          "type" : "application",
+          "value" : "/Applications/zoom.us.app"
         }
       ],
       "key" : "o",
