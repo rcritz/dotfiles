@@ -88,8 +88,16 @@ height = "90%"
 [[keys.command]]
 key = "prefix+ctrl+o"
 type = "popup"
-command = "opencode"
-description = "open OpenCode"
+command = "claude"
+description = "open Claude"
+width = "90%"
+height = "90%"
+
+[[keys.command]]
+key = "prefix+ctrl+y"
+type = "popup"
+command = "yazi"
+description = "open yazi"
 width = "90%"
 height = "90%"
 
