@@ -265,6 +265,7 @@ alt-shift-l = 'move right'
 [workspace-to-monitor-force-assignment]
 A = 'secondary'
 B = 'secondary'
+9 = 'secondary'
 10 = 'secondary'
 
 [[on-window-detected]]
@@ -390,3 +391,7 @@ run = 'move-node-to-workspace R'
 [[on-window-detected]]
 if.app-id = 'com.microsoft.teams2'
 run = 'move-node-to-workspace Z'
+
+[[on-window-detected]]
+if.app-id = 'org.pharr.vice'
+run = 'move-node-to-workspace 9'
