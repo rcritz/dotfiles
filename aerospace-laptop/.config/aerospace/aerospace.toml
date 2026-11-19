@@ -264,6 +264,7 @@ alt-shift-l = 'move right'
 
 [workspace-to-monitor-force-assignment]
 A = 'secondary'
+9 = 'secondary'
 10 = 'secondary'
 
 [[on-window-detected]]
@@ -377,3 +378,7 @@ run = ['layout floating', 'move-node-to-workspace X']
 [[on-window-detected]]
 if.app-id = 'com.valvesoftware.steam'
 run = ['layout floating', 'move-node-to-workspace X']
+
+[[on-window-detected]]
+if.app-id = 'org.pharr.vice'
+run = 'move-node-to-workspace 9'
